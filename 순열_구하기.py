@@ -21,3 +21,4 @@ def permutation(l) :
 permutation(0)
 print(count)
 
+ 
