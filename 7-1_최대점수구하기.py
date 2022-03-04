@@ -8,9 +8,7 @@ times = [] # 시간 list
 def DFS(i, Sum, t) :
 	global result
 	if t > m : #제한 시간 넘으면 멈추기
-        
 		return
-	
 	if i == n : # 마지막 문제까지 갔으면
 		if Sum > result : # 최대값 기록
 			result = Sum
