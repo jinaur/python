@@ -6,9 +6,9 @@ m = int(input()) # 거슬러줄 금액
 # Sum 현재 돈
 def exchange(count, Sum) :
 	global result
-	if count > result :
+	if count > result : # 동전 최소 개수를 넘었을 때
 		return
-	if Sum > m : 
+	if Sum > m : # 거슬러줄 돈을 넘었을 때
 		return
 	if Sum == m : # 현재 돈과 거슬러줄 돈이 같을 때
 		if count < result : # 최소 개수 저장
