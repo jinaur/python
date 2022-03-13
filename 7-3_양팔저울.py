@@ -22,7 +22,7 @@ check = list(check)
 # for i in range(len(check)) :
 #     if check[i] < 0 :
 #         check[i] = 0
-# while 0 in check :    
+# while 0 in check :
 # 	check.remove(0)
 
 # print(check)
