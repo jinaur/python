@@ -5,7 +5,6 @@ for i in range(0, 10) :
 	l.append(a)
 
 def ladder(y, x, l) :
-    global check
     if y == 0 :
         print(x)
         exit()
@@ -19,6 +18,5 @@ def ladder(y, x, l) :
         ladder(y-1, x, l)
 
 for i in range(0, 10) :
-    check = 0
     if l[9][i] == 2 :
         r = ladder(9, i, l)
