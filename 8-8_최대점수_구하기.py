@@ -11,7 +11,7 @@ for i in range(0, n) :
 
 scorecount = 0
 timecount = 0
-# print(l)
+
 for i in range(0, n) :
     # print(scorecount)
     count = 0
