@@ -1,22 +1,10 @@
-n, w = map(int, input().split())
+n, m = map(int, input().split())
 
-gem_list = []
+gem = [0]*(m+1) # gem[5] 는5그램 담을수 있단 의미
 for i in range(0, n) :
-	gem = list(map(int, input().split()))
-	gem_list.append(gem)
+	w, p = map(int, input().split())
+	for j in range(w, m+1) :
+		gem[j] = max(gem[j], gem[j-w]+p)
+	print(gem(m))
 	
-Max = 0
-def bag(l, Sum, weightSum) :
-    global Max
-    if Max < Sum :
-        Max = Sum
-    if l == n :
-        return Max
-    for i in range(0, n) :
-        if weightSum+gem_list[i][0] <= w :
-            bag(l+1, Sum+gem_list[i][1], weightSum+gem_list[i][0])
-    
-
-bag(0, 0, 0)
-print(Max)
 
