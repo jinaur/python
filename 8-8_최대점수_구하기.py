@@ -1,35 +1,16 @@
 n, m = map(int, input().split())
-l = []
-scores = []
-times = []
 
+score = [0]*(m+1)
 for i in range(0, n) :
-	s, t = map(int, input().split())
-	l.append(s/t)
-	scores.append(s)
-	times.append(t)
+    s, t = map(int, input().split())
+    for j in range(m, t-1, -1) :
+        score[j] = max(score[j], score[j-t]+s)
 
-scorecount = 0
-timecount = 0
-
-for i in range(0, n) :
-    # print(scorecount)
-    count = 0
-    for j in range(0, n) :
-        if scores[j]/times[j] == max(l) == l[j] and timecount+times[j] <= m :
-            scorecount += scores[j]
-            timecount += times[j]
-            # print(l[j], max(l), scores[j]/times[j])
-            l[j] = 0
-            break
-        count += 1
-
-    if count == n :
-        for j in range(0, n) :
-            if l[j] != 0 and timecount+times[j] <= m :
-                scorecount += scores[j]
-                timecount += times[j]
-                l[j] = 0
+print(score[m])
 
 
-print(scorecount)
+# 2번 하지않게 뒤에서부터 감
+# j-t가 0미만이 되면 그 시간대엔 문제를 풀수없다
+# j = 11 t = 12 일땐 안되고
+# j-t >= 5 일땐 score[5~8] = 10 이기에 +s해서 35나옴
+# j-t < 5 일땐 score[1~4] = 0 +s해서 25나옴
