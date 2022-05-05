@@ -11,10 +11,10 @@ a = list(map(int,input().split()))
 for i in range(1, n-1) :
     ans = max(ans, sum(a[1:n-1]) + a[n-i] )
 
-for i in range(1, n-1) : 
+for i in range(1, n-1) : # 왼쪽
     ans = max(ans, sum(a[1:n-i]) - a[n-i-1] + 2*sum(a[n-i:]))
 
-a.reverse()
+a.reverse() # 뒤집어서 오른쪽
 for i in range(1, n-1) :
     ans = max(ans, sum(a[1:n-i]) - a[n-i-1] + 2*sum(a[n-i:]))
 
