@@ -20,7 +20,6 @@ for i in range(1, n-1) :
 
 print(ans)
 
-
 # 9 18 22 23 27 36 45
 # for i in range(1, n) : # 합을 구해놓음
 #     s.append(s[i-1]+a[i])
