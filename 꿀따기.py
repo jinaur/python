@@ -1,15 +1,12 @@
 n = int(input())
-ans = 0
 a = list(map(int,input().split()))
-# s = []
-# s.append(a[0])
 
 # 7
 # 9 9 4 1 4 9 9
 # * 9 4 1 4 9 *
 
-for i in range(1, n-1) :
-    ans = max(ans, sum(a[1:n-1]) + a[n-i-1] )
+ans = sum(a[1:n-1]) + max(a[1:n-1])
+# for i in range(1, n-1) :
     # print(a[1:n-1])
     # print(a[n-i])
 
@@ -23,6 +20,13 @@ for i in range(1, n-1) :
 print(ans)
 
 # 9 18 22 23 27 36 45
+
+# n = int(input())
+# ans = 0
+# a = list(map(int,input().split()))
+# s = []
+# s.append(a[0])
+
 # for i in range(1, n) : # 합을 구해놓음
 #     s.append(s[i-1]+a[i])
 
