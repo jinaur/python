@@ -6,7 +6,6 @@ def main(lock1, lock2) :
         if lock2 == i and i%2 == 1 :
             print(1)
             exit()
-
     print(0)
 
 if __name__ == '__main__':
