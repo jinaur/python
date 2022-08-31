@@ -4,6 +4,8 @@ a = list(map(int, input().split()))
 l = []
 for i in range(0, n) :
     for j in range(1, n) :
+        a1 = a[:i]
+        a2 = a[j:]
         aa = a[i:j]
         resaa = aa[::-1]
         Max = -10000000000000
