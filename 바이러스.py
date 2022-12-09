@@ -2,8 +2,13 @@ n = int(input())
 m = int(input())
 
 count = 0
-vl = [0]*(n+1)
 l = [[]*n for i in range(0, n+1)]
+for i in range(m):
+    a, b = map(int,input().split())
+    l[a].append(b)
+    l[b].append(a)
+
+vl = [0]*(n+1)
 
 def DFS(start) :
     global count
@@ -17,3 +22,4 @@ def DFS(start) :
 
 DFS(1)
 print(count)
+
