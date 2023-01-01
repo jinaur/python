@@ -15,5 +15,18 @@
 #     return answer
 # print(solution(n))
 
-n = int(input())
-print("hello world", n)
+print(round(int(chr(49))/int(chr(57))*int(chr(51))+int(chr(55))/int(chr(51)))-int(chr(50)))
+
+1 1 1 1 1 
+1 1 1 2
+1 1 2 1
+1 2 1 1
+2 1 1 1
+1 2 2
+2 1 2
+2 2 1
+1 1 3
+1 3 1
+3 1 1
+2 3 
+3 2
