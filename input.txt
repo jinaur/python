@@ -1,21 +1,7 @@
-20 11
-Lorem ipsum
-dolor sit amet
-consectetur
-adipiscing elit
-Duis tristique
-Nunc congue nisi
-vitae suscipit tellus mauris
-<CENTER>
-Nunc congue nisi
-vitae suscipit tellus mauris
-Integer quis
-Id venenati
-a condimentum vitae
-</CENTER>
-<RIGHT>
-Nisi est sit
-amet facilisis magna
-Volutpat ac tincidunt
-vitae semper quis
-</RIGHT>
+2
+5
+50 10 100 20 40
+30 50 70 10 60
+7
+10 30 10 50 100 20 40
+20 40 30 50 60 20 80

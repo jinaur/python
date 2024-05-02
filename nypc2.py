@@ -30,7 +30,6 @@ input = sys.stdin.readline
             
 #         print(s)
 
-
 num_lines, max_column = map(int, input().split())
 
 lines = []
@@ -79,9 +78,6 @@ for line in lines:
     if len(output) > 0:
         align_print(output)
         output = ''
-
-    # if line[0] == '</RIGHT>':
-    #     print('bingo')
 
     check_align = get_align(line)
     if check_align != None:
